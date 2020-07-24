@@ -1,6 +1,6 @@
 .app {
   height: 100vh;
-  background: lightBlue;
+  background: rgb(214, 214, 214);
   min-height: 100vh;
   display: flex;
   justify-content: space-around;
@@ -13,6 +13,15 @@
   height: 300px;
   width: 300px;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.milk{
+  height: 300px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

@@ -1,15 +1,16 @@
-import React,{useState} from "react";
-import Tweet from "./Tweet";
+import React from "react";
+//import Tweet from "./Tweet";
+import milkBase from './milk_base.svg'
 
-function App(){
-  return(
-    <div>
-      <h3>Connor's Cool New Twitter Website</h3>
-      <div className="app">
-        <Tweet name="Camden" tweetBody="I make noodles" likes="69" />
-        <Tweet name="Connor" tweetBody="CODE CODE CODe" likes="69" />
-        <Tweet name="Cason " tweetBody="Pee Pee" likes="420" />
-      </div>
+function App() {
+  var decimalRounded = Math.round((new Date().getHours() / 24) * 100)/100;
+  var decimalConversion = Math.round(decimalRounded * 255);
+  var transparencyHex = decimalConversion.toString(16);
+
+  return (
+    <div className="app">
+      <img src={milkBase} width="300" height="300"/>
+      <h1>The hex code for the transparency is "{transparencyHex}"</h1>
     </div>
   );
 }
