@@ -1,6 +1,6 @@
 import React from "react";
 //import Tweet from "./Tweet";
-import milkBase from './milk_base.svg'
+//import milkBase from './milk_base.svg'
 
 function App() {
   var decimalRounded = Math.round((new Date().getHours() / 24) * 100)/100;
@@ -9,8 +9,9 @@ function App() {
 
   return (
     <div className="app">
-      <img src={milkBase} width="300" height="300"/>
-      <h1>The hex code for the transparency is "{transparencyHex}"</h1>
+      <h1>Test Header</h1>
+      {/*<img src={milkBase} width="300" height="300" alt = "milk"/>
+      <h1>The hex code for the transparency is "{transparencyHex}"</h1>*/}
     </div>
   );
 }
